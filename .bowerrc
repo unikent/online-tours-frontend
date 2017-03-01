@@ -1,0 +1,5 @@
+{
+  "analytics": "false",
+  "allow-root": "true",
+  "directory" : "src/bower_components"
+}

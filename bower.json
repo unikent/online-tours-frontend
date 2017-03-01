@@ -1,0 +1,36 @@
+{
+  "name": "kent_tours_frontend",
+  "version": "0.0.1",
+  "authors": [
+    "Justice Addison <J.N.Addison@kent.ac.uk>",
+    "Edele Gormley <A.Gormley@kent.ac.uk>",
+    "Tom Gillett <tom@tomgillett.co.uk>",
+    "Greg Haddow <G.Haddow@kent.ac.uk>",
+    "Carl Saggs <C.Saggs@kent.ac.uk>"
+  ],
+  "private": true,
+  "dependencies": {
+    "requirejs": "~2.1.*",
+    "requirejs-text": "~2.0.14",
+
+    "jquery": "1.*",
+    "backbone": "~1.1.*",
+    "backbone-model-factory": "~1.2.0",
+    "backbone-fetch-cache": "1.5.5",
+    "kent-font": "unikent/kent-font",
+    "jquery-hammerjs": "2.0.0",
+    "hammerjs": "https://github.com/unikent/hammer.js.git",
+    "backbone.hammer": "~1.0.1"
+  },
+  "devDependencies": {
+    "mocha": "~1.20.*",
+    "sinon": "http://sinonjs.org/releases/sinon-1.10.2.js",
+    "chai": "~1.9.*"
+  },
+  "resolutions": {
+    "underscore": "1.6.0",
+    "hammerjs": "2.0.5",
+    "jquery-hammerjs": "2.0.0",
+    "jquery": "2.1.x"
+  }
+}

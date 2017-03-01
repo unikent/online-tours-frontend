@@ -1,0 +1,31 @@
+{
+  "name": "kent_tours_frontend",
+  "version": "0.0.1",
+  "authors": [
+    "Justice Addison <J.N.Addison@kent.ac.uk>",
+    "Edele Gormley <E.Gormley@kent.ac.uk>",
+    "Tom Gillett <tom@tomgillett.co.uk>",
+    "Greg Haddow <G.Haddow@kent.ac.uk>",
+    "Carl Saggs <C.Saggs@kent.ac.uk>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:unikent/online-tours-frontend.git"
+  },
+  "devDependencies": {
+    "bower": "~1.3",
+    "grunt": "~0.4",
+    "grunt-cli": "~0.1",
+    "grunt-contrib-concat": "~0.1",
+    "grunt-contrib-copy": "~0.5",
+    "grunt-contrib-jshint": "^0.11.1",
+    "grunt-contrib-requirejs": "~0.4",
+    "grunt-contrib-uglify": "~0.3",
+    "grunt-contrib-watch": "~0.5"
+  },
+  "dependencies": {
+    "grunt-contrib-less": "~1.0.0",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-jshint": "~0.11.1"
+  }
+}

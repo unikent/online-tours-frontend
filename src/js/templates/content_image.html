@@ -1,0 +1,15 @@
+<% if(src.full) { %>
+<figure>
+    <img src="<%= (src.medium !== '') ? src.medium : (src.large !== '') ? src.large : (src.largethumb !== '') ? src.largethumb : src.full %>" onerror="this.parentNode.parentNode.style.display='none'"/>
+    <figcaption>
+        <% if(typeof caption !== 'undefined' && caption !== '') { %>
+        <%= caption %>
+        <% } %>
+        <% if(typeof copyright !== 'undefined' && copyright !== '') { %>
+            <div class="attribution">
+                &copy; <%= copyright %>
+            </div>
+        <% } %>
+    </figcaption>
+</figure>
+<% } %>

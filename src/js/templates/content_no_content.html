@@ -1,0 +1,8 @@
+<%
+var refresh_text = (typeof refresh !== 'undefined' && refresh) ? 'Please try <a class="refresh">refreshing</a>' : '';
+var back_text = (typeof back !== 'undefined' && back) ? ', <a class="goback">or choose a new location</a>' : '';
+%>
+<p>
+	Sorry, we cannot get any content at the moment. <%= refresh_text %><%= back_text %>.
+</p>
+

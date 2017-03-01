@@ -1,0 +1,6 @@
+bower_components/
+node_modules/
+/local.config.json
+index-dev.html
+.idea/
+.DS_Store

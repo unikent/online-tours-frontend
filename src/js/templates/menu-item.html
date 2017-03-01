@@ -1,0 +1,11 @@
+<li <% if (typeof(id) !== "undefined") { %>data-id="<%=id %>"<% } %><% if (typeof(slug) !== "undefined") { %>data-slug="<%=slug %>"<% } %>>
+	<span><%=name %>
+	<% if (typeof(duration) !== "undefined") { %>
+		<span class="tour-duration">(approx.&nbsp;<%=duration %>)</span>
+	<% } %>
+	</span>
+	<i class="kf-chevron-right"></i>
+	<% if (typeof(description) !== "undefined") { %>
+		<p class="description"><%=description %></p>
+	<% } %>
+</li>

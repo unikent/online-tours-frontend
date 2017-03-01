@@ -1,0 +1,203 @@
+.draw {
+	will-change: true;
+	transform: translateZ(0);
+
+	width: 100%;
+	height: 100vh;
+	overflow: visible;
+	position: relative;
+	padding-bottom: 40px;
+	box-sizing: border-box;
+
+	color: @darkest-grey;
+	//background: @white;
+
+	box-shadow: 10px 10px 20px 10px rgba(0,0,0,0.75);
+
+
+	.draw__handle{
+		transition: all 300ms;
+		display: block;
+		width: 50px;
+		z-index: -1;
+
+		padding: 2px 0 0 0;
+		height: 22px;
+
+		position: absolute;
+		top: -24px; right: 15px;
+
+		content: "\f077";
+		text-align: center;
+
+		font-family: 'kentfont', @main-font;
+		font-size: 27px;
+		color: @primary;
+
+		background: white;
+		box-shadow: -3px -3px 12px -1px rgba(0, 0, 0, 0.75);
+
+		cursor: pointer;
+	}
+
+	.draw__header {
+		padding: 10px 15px;
+		background: @white;
+		transition: all 200ms;
+		.draw__title {
+			transition: all 200ms;
+			margin: 0;
+			padding: 0;
+
+			font-family: @header-font;
+			font-weight: normal; text-transform: uppercase;
+			font-size: 22px;
+			color: @primary;
+		}
+	}
+
+	.draw__body {
+		max-height: 100%;
+		&:before{
+			content: '';
+			height: 0;
+			width: 100vw;
+			display: block;
+			background: transparent;
+			transition: background-colour 600ms;
+			}
+	}
+
+
+	.content__collection {
+		.content__list{
+			background: @white;
+			padding: 10px 15px;
+			padding-bottom: 70px;
+			min-height: 100vh;
+			min-height: ~"calc(100vh - 155px)";
+			height: auto;
+
+			.content__after{
+				.navlist;
+
+				margin-top: 3em;
+
+				.content__links{
+					font-size: 0.8em;
+					margin: 0;
+
+					li{
+						background: transparent;
+						padding-left: 0;
+					}
+				}
+
+				i.kf-wheelchair{
+					float:left;
+					margin-right:5px;
+					position: relative;
+					top:auto;
+					right:auto;
+				}
+			}
+		}
+
+	}
+}
+
+.draw--loading {
+	position: relative;
+	width: 100%;
+	background: @white;
+
+	.content__collection{
+		background: @white;
+
+		&:before{
+			display: block;
+
+			position: relative;
+			top: 18px;
+
+			width: 100%;
+			height: 100%;
+
+			font-family: 'kentfont';
+			font-size: 50px;
+			color: @primary;
+			background: transparent;
+			box-shadow: none;
+			text-align: center;
+			content: "\f1ce";
+
+			.kf-spin;
+		}
+	}
+}
+
+
+.draw--collapsed {
+	.draw__header {
+		padding: 3px 15px;
+		.draw__title {
+			font-size: 14px;
+			word-wrap: break-word;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			overflow: hidden;
+		}
+	}
+
+	.content__collection{
+		background: @white;
+		.content__list{
+			padding: 0 15px;
+			.content-audio{
+				margin-top: 0;
+			}
+		}
+	}
+}
+
+.draw--semiscreen {
+
+}
+
+.draw--fullscreen {
+
+	.draw__handle{
+		top:10px;
+		opacity: 0;
+		transition: none;
+	}
+
+	.draw__body{
+		&:before{
+			content: '\f053';
+			color: @white;
+			display: block;
+			position: relative;
+			width: 100vw;
+			background: rgba(0, 0, 0, 0.4);
+			height: 50px;
+			z-index: -1;
+			font-family: "kentfont";
+			font-size: 25px;
+			padding: 7px;
+			box-sizing: border-box;
+		}
+	}
+
+	.draw__header {
+		background: @primary;
+		.draw__title {
+			color: white;
+		}
+	}
+
+	.draw__body {
+		box-sizing: border-box;
+		overflow-y: scroll;
+	}
+}

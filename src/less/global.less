@@ -1,0 +1,100 @@
+.viewport {
+	width: 100vw;
+	height: 100vh;
+	overflow:hidden;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+
+.app_page.startmenu, .app_page.pages_page, .app_page.list_page {
+
+	.scroll-container {
+		height: 100vh;
+		height: ~"calc(100vh - 40px)";
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+
+		& > .contents {
+			padding: 0 15px;
+		}
+
+		/* padding for iOS */
+		section.menu, section.pois {
+			margin-bottom: 80px;
+		}
+
+	}
+
+	nav {
+		background-color: @primary;
+		color:@white;
+		font-size:16px;
+		padding:0.8px;
+		//font-family: @header-font;
+		i {
+			padding:8px;
+			font-size:1.3em;
+			color:@white;
+
+			&.kf-menu {
+				float:right;
+				padding-right:15px;
+			}
+
+		}
+	}
+}
+
+.app_page.main {
+	section.map {
+		height: 100%;
+		padding-bottom: 40px;
+		box-sizing: border-box;
+
+		.tooltip{
+			padding:5px;
+			background: @white;
+			box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.75);
+			min-width: 100px;
+			max-width: 80vw;
+			position: relative;
+			display: table-cell;
+			h3{
+				box-sizing: border-box;
+				font-size: 14px;
+				font-weight: normal;
+				color: @primary;
+				margin: 0 23px 0 0;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				word-break: break-all; word-wrap: break-word;
+				overflow: hidden;
+				i.tooltip-icon{
+					position: absolute;
+					right: 5px;
+					font-size: 19px;
+					top: 8px;
+				}
+			}
+			&:after{
+				content:"";
+				display: block;
+				border-bottom: 6px solid @white;
+				border-left: 6px dotted transparent;
+				border-right: 6px dotted transparent;
+				position: absolute;
+				top: -6px;
+				left: 24px;
+			}
+		}
+	}
+}
+
+.hidden{
+	opacity: 0 !important;
+	height: 0 !important;
+	visibility: hidden !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}

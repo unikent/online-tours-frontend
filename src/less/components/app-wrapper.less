@@ -1,0 +1,33 @@
+.app_wrapper {
+	width: 600vw;
+	height:100%;
+	margin:0px;
+	padding:0px;
+	transition: transform 0.3s;
+
+	div.app_page {
+        margin-top: 40px;
+        height: 100%;
+		width: 100vw;
+		float:left;
+		overflow: hidden;
+
+        &.index{
+          margin-top: 0;
+        }
+
+		div.indexheader {
+			height:40px;
+			img {
+				float: right;
+				width: 160px;
+				margin-top: 4px;
+				margin-right: 4px;
+			}
+		}
+      .back{
+        color: @primary;
+        padding: 10px;
+      }
+	}
+}

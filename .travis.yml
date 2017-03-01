@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - "0.10"
+git:
+  submodules: false
+install:
+  - npm install -g mocha-phantomjs@3.5.2
+  - npm install
+  - bower install
+before_script:
+  - phantomjs --version
+  - mocha-phantomjs --version
+script: "grunt jshint && mocha-phantomjs test.html"

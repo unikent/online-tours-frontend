@@ -1,0 +1,28 @@
+<div class="scroll-container">
+    <div class="close"><i class="kf-chevron-left"></i></div>
+    <div class="title" ><%=title %></div>
+    <div class="backlink">Back to <span data-url="<%=backlink %>"><%=backtext %></span></div>
+    <div class="times">
+        <div class="timenow"></div>
+        <div class="timeleft"></div>
+    </div>
+    <div class="timeline">
+
+        <div class="gutter"></div>
+        <div class="current" >
+            <div class="handle" ></div>
+        </div>
+
+    </div>
+    <div class="controls">
+        <div class="restart"><span></span></div>
+        <div class="playtoggle-container"><div class="playtoggle"><span></span></div></div>
+    </div>
+
+    <% if (typeof(transcription) !== "undefined" && transcription !== "") { %>
+    <div class="transcription">
+        <h3>Audio Transcription</h3>
+        <%=transcription %>
+    </div>
+    <% } %>
+</div>

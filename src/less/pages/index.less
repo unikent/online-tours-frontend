@@ -1,0 +1,84 @@
+body {
+	margin:0px;
+	padding:0px;
+	font-size: @base-font-size;
+	line-height: @base-line-height;
+	overflow: hidden;
+
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	overflow:hidden;
+
+	font-family: @main-font;
+}
+
+h1,
+h2 {
+	font-family: @header-font;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: @primary;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+h1{
+	font-size: 1.6em;
+}
+h2{
+	font-size: 1.4em;
+}
+
+div.index {
+	section {
+		height:90%;
+		margin-top:100px;
+		box-sizing: border-box;
+
+		background: url(@home-image);
+		background-position: center 0px;
+		background-repeat: no-repeat;
+		//background-size: auto 100% ;
+		background-size: cover;
+
+		.start {
+			top: -60px;
+			position: relative;
+			background-color: @primary;
+
+			padding: 8px;
+			display:block;
+			width:80%;
+			text-decoration:none;
+			font-family: @header-font;
+
+			span {
+				display:block;
+				padding:8px;
+				color: @white;
+
+				&.icon {
+					float:right;
+					font-size:2.4em;
+					
+					&.kf-spinner{
+						font-size: 1.5em;
+						margin-top:15px;
+					}
+				}
+				&.main {
+					font-size:1.6em;
+					text-transform: uppercase;
+				}
+				&.tagline {
+					font-size:1em;
+					font-style: italic;
+					color: @secondary-alt;
+					padding: 0 8px 8px;
+				}
+
+			}
+		}
+	}
+}

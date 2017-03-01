@@ -1,0 +1,51 @@
+header.primary {
+  position: fixed;
+  z-index: 1000;
+  width: 100vw;
+  background-color: @primary;
+  height: 40px;
+
+  i {
+    padding: 8px;
+    font-size: 1.3em;
+    color: @white;
+
+    &.kf-menu {
+      float: right;
+      padding-right: 15px;
+    }
+
+  }
+}
+
+section.main-menu {
+
+  width:100vw;
+  top:40px;
+  position: fixed;
+  background: @grey;
+  z-index:10;
+
+  display:none;
+
+  box-shadow: 0 10px 15px 0 rgba(0,0,0,.45);
+
+  ul, li { margin:0px; padding:0px;}
+  ul li {
+    list-style:none;
+
+    padding:8px 15px;
+    border-bottom: solid 1px #ddd;
+    cursor:pointer;
+
+    i {
+      float:right;
+      padding-top: 5px;
+    }
+  }
+}
+
+.control-audio {
+  float:right;
+  display:none;
+}

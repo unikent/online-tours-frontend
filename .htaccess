@@ -1,0 +1,9 @@
+RewriteEngine On
+
+RewriteRule app/components/infobox.js$  https://%{SERVER_NAME}/src/js/components/infobox.js  [R,NC,L]
+RewriteRule app/components/geolocationmarker.js$  https://%{SERVER_NAME}/src/js/components/geolocationmarker.js  [R,NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.html [QSA,L]
+DirectoryIndex index.html

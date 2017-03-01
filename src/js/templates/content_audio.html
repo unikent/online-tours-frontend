@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="radial-progress" data-progress="0">
+        <div class="circle">
+            <div class="mask full">
+                <div class="fill"></div>
+            </div>
+            <div class="mask half">
+                <div class="fill"></div>
+                <div class="fill fix"></div>
+            </div>
+        </div>
+        <div class="playtoggle" ><span></span></div>
+    </div>
+    <div class="error">
+        <i class="kf-meh"></i>
+    </div>
+    <div class="details">
+        <div class="title" ><%=title %></div>
+        <div class="timeleft" ></div>
+        <% if (typeof(transcription) !== "undefined" && transcription !== "") { %>
+        <div class="transcription-toggle">
+            <a title="Show transcription" class="show-btn">Transcription <i class="kf-chevron-down"></i></a>
+            <a title="Hide transcription" class="hide-btn" style="display:none">Transcription <i class="kf-chevron-up"></i></a>
+        </div>
+        <% } %>
+    </div>
+    <% if (typeof(transcription) !== "undefined" && transcription !== "") { %>
+    <div class="transcription" style="display:none"><%=transcription %></div>
+    <% } %>
+</div>
+
