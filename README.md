@@ -1,8 +1,8 @@
 # Online Tours - Frontend App
 
-See it in use at https://tours.kent.ac.uk/
+See it in action at https://tours.kent.ac.uk/ (Please use a mobile browser for the best experince.)
 
-This codebase is provided primarily as a reference and is still currently heavily tied to the kent look & feel.
+This codebase is provided primarily as a reference and is still currently heavily tied to the Kent look & feel.
 
 The code itself is licensed under the MIT License.
 
